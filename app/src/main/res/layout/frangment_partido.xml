@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+   >
+
+    <GridLayout
+
+        android:id="@+id/mainGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        >
+
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+
+
+                    >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_margin="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¿Como se llamará tu partido?"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/txtnompartido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="Nombre"
+                        android:textSize="14dp"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <Button
+                        android:id="@+id/btnfecha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha "/>
+
+                    <EditText
+                        android:id="@+id/txtfecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/btnhora"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hora "/>
+
+                    <EditText
+                        android:id="@+id/txthora"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_margin="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deporte"
+
+                        />
+                    <Spinner
+                        android:id="@+id/spinnerDeporte"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                 <Button
+                     android:id="@+id/btnLugar"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Lugar"/>
+
+
+
+                    <EditText
+                        android:id="@+id/txtDireccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="direccion"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="15dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descripcion"/>
+
+
+
+                    <MultiAutoCompleteTextView
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/txtdescripcion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Descripcion del evento"
+                        android:textSize="14dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnguardardatos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text=" Siguiente "
+                        android:textColor="@color/cardview_light_background"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
+
+
+
+</RelativeLayout>

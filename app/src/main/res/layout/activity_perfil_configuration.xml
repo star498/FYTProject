@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vista.PerfilConfigurationActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+            <Button
+                android:layout_marginLeft="1dp"
+                android:id="@+id/regresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/regresar"
+                android:background="@null"/>
+        </android.support.v7.widget.Toolbar>
+        <GridLayout
+
+            android:id="@+id/mainGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/bordeperfil">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="CONFIGURACION PERFIL"
+                            android:fontFamily="casual"
+                            android:textColor="@color/colorPrimary"/>
+                    </android.support.design.widget.TextInputLayout>
+                    <LinearLayout
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipChildren="false">
+
+                        <ImageView
+
+                            android:id="@+id/photo"
+                            android:layout_width="88dp"
+                            android:layout_height="88dp"
+                            android:layout_marginRight="16dp" />
+
+
+
+                        <LinearLayout
+                            android:id="@+id/vUserDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/nombre"
+                                android:textColor="#424242"
+                                android:textSize="15sp"
+                                android:hint="Nombre"
+                                android:inputType="text"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/correo"
+                                android:textColor="#424242"
+                                android:textSize="15sp"
+                                android:hint="Correo"
+                                android:editable="false"
+                                android:inputType="textEmailAddress"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/celular"
+                                android:textColor="#424242"
+                                android:textSize="15sp"
+                                android:hint="Numero Telefonico"
+                                android:inputType="number|phone"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="4dp">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/descripcion"
+                            android:textColor="#424242"
+                            android:textSize="15sp"
+                            android:hint="Sobre Ti"
+                            android:inputType="text"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edad"
+                            android:textColor="#424242"
+                            android:textSize="15sp"
+                            android:hint="Edad"
+                            android:inputType="number"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="3dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Elige el deporte: "
+                                android:gravity="center"
+                                android:layout_gravity="center"/>
+                            <Spinner
+                                android:gravity="center_vertical"
+                                android:layout_gravity="left"
+                                android:id="@+id/spinner"
+                                android:layout_marginTop="8dp"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/deportes"
+                                android:layout_margin="2dp"
+                                android:background="@drawable/spinner"
+                                style="@style/spinner">
+
+                            </Spinner>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="3dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sexo: "
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="20dp"/>
+                            <Spinner
+                                android:gravity="center_vertical"
+                                android:layout_gravity="left"
+                                android:id="@+id/spinnerSexo"
+                                android:layout_marginTop="8dp"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/sexo"
+                                android:layout_margin="2dp"
+                                android:background="@drawable/spinner"
+                                style="@style/spinner">
+
+                            </Spinner>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="300dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="18dp"
+                            android:background="@drawable/bordedos"
+                            android:text="GUARDAR DATOS"
+                            android:textColor="@color/cardview_light_background"
+                            android:textSize="14sp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

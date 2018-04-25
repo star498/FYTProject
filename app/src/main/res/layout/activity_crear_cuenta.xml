@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.estrella.fytproject.Vista.CrearCuenta">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <Button
+                android:id="@+id/regresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_keyboard_backspace_black_18dp"
+                android:onClick="Regresar" />
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/run"
+            android:layout_margin="10dp"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TU CUENTA PARA TODO LO RELACIONADO A FYT"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000"
+            android:fontFamily="serif"
+            />
+        <!--  <Button
+              android:id="@+id/btnfacebook"
+              android:layout_width="300dp"
+              android:layout_height="35dp"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/borde"
+              android:drawableLeft="@drawable/nuevo"
+              android:text="REGÍSTRATE CON FACEBOOK"
+              android:textColor="@color/cardview_light_background"
+              android:textSize="15sp" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O BIEN"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#8E8E8E"
+            android:fontFamily="serif"
+            />
+
+
+        <EditText
+            android:background="@drawable/bordeuno"
+            android:layout_marginTop="8dp"
+            android:id="@+id/correo"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:hint="Correo Electronico"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:layout_gravity="center" />
+
+
+        <EditText
+            android:id="@+id/contraseña"
+            android:background="@drawable/bordeuno"
+            android:layout_marginTop="8dp"
+            android:imeOptions="actionDone"
+            android:hint="Contraseña"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="#8E8E8E"
+            android:text="Suscríbete para recibir correos y enterarte de lo ultimo de FYT" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Al crear una cuenta, aceptas la Politica de privacidad y Términos de uso de FYT"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#8E8E8E"
+            android:fontFamily="serif"
+            android:textSize="13dp"
+            />
+
+        <Button
+            android:id="@+id/btncrearcuenta"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bordedos"
+            android:text="CREAR CUENTA"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:text="¿Ya eres miembro?"
+                android:textColor="#8E8E8E"
+                android:textSize="13dp"
+                android:gravity="right"/>
+
+            <Button
+                android:layout_marginLeft="3dp"
+                android:id="@+id/iniciarsession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@null"
+                android:text="IniciarSession"
+                android:textAllCaps="false"
+                android:textColor="#8E8E8E"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

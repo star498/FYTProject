@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/navigation_partido"
+        android:icon="@drawable/ic_access_time_black_48dp"
+        android:title="@string/title_activity_partido" />
+
+    <item
+        android:id="@+id/navigation_equipos"
+        android:icon="@drawable/ic_group_black_48dp"
+        android:title="@string/title_equipospartidos"
+        />
+
+    <item
+        android:id="@+id/navigation_configuracion"
+        android:icon="@drawable/ic_build_black_48dp"
+        android:title="@string/title_configpartido" />
+
+</menu>

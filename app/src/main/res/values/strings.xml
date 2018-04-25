@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">FytProject</string>
+    <string name="title_activity_principal">Principal</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">1058753284278618</string>
+    <string name="fb_login_protocol_scheme">fb1058753284278618</string>
+    <string name="cancel_login">Se cancelo</string>
+    <string name="error_login">error no conecto</string>
+    <string name="not_firebase_auth">error no conecto firebase gmail</string>
+    <string name="title_activity_maps_prueba">Map</string>
+    <string name="title_activity_partido">Partido</string>
+    <string name="title_partido">Inicio</string>
+    <string name="title_equipospartidos">Enfrentamientos</string>
+    <string name="title_configpartido">Configuracion</string>
+    <string name="title_partidos">Partidos</string>
+    <string name="title_parpendientes">Pendientes</string>
+
+    <string name="title_notificaciones">Notificaciones</string>
+
+
+
+    <string-array name="deportes">
+        <item>BASQUET</item>
+    </string-array>
+
+    <string-array name="sexo">
+        <item>HOMBRE</item>
+        <item>MUJER</item>
+    </string-array>
+    <string name="title_activity_principal_partidos">PrincipalPartidos</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

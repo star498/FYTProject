@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "953092327066",
+    "firebase_url": "https://fytp-aa669.firebaseio.com",
+    "project_id": "fytp-aa669",
+    "storage_bucket": "fytp-aa669.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953092327066:android:59d9b7c036ab2de6",
+        "android_client_info": {
+          "package_name": "com.example.estrella.fytproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953092327066-5c4qoe5jei6e5is7blt80q1euja8s6jc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.estrella.fytproject",
+            "certificate_hash": "6e1b26f9e3c87d928b59f94c5c5e6953691b1f7e"
+          }
+        },
+        {
+          "client_id": "953092327066-s5jsuno90665dpsgspvc3mq9b0g6nome.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.estrella.fytproject",
+            "certificate_hash": "bb5bd69e543224c0b9a71a7ee11975bede06e616"
+          }
+        },
+        {
+          "client_id": "953092327066-tmbem4j2ub7hc8g3gcke80o6h0grentk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB89rgM5QSyKU9b1h39fd6F3bdYehj-Pho"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953092327066-tmbem4j2ub7hc8g3gcke80o6h0grentk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
